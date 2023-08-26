@@ -1,0 +1,6 @@
+export const twitterLink = "https://twitter.com/MyAsapBot"
+export const mLink = "https://m.com/"
+export const discordLink = "https://discord.com/"
+export const teelgramLink = "https://t.me/myasapbot"
+export const buyLink = "https://app.uniswap.org/#/swap?outputCurrency=0xC36AD98E62598Ae24d4487d8012209f687c30D45&chain=mainnet"
+export const chartsLink = "https://www.dextools.io/app/en/ether/pair-explorer/0x71cb3c6c5d30af1eca48a8fe0818c987f269b7e1"

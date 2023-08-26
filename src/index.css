@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    word-break: break-word;
+    transition: background-color .2s, left .2s, opacity .2s;
+  }
+
+  *:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  html {
+    background-color: #000;
+  }
+
+  @font-face {
+    font-family: Clash;
+    src: url("../public/fonts/ClashGrotesk.ttf");
+  }
+
+  @font-face {
+    font-family: Cabinet;
+    src: url("../public/fonts/CabinetGrotesk.ttf");
+  }
+
+  body {
+    font-family: Poppins;
+    @apply text-white bg-black text-sm md:text-base font-normal max-w-[2200px] mx-auto min-h-[100vh] flex tracking-wide
+  }
+  
+  body > #root {
+    @apply flex-1 flex flex-col w-full
+  }
+  
+  body > #root > .App {
+    @apply flex-1 flex flex-col w-full
+  }
+  
+  /* Custom Scroll bar */
+  ::-webkit-scrollbar {
+    width: .3rem;
+    height: .3rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #13131A;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #06060c;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000;
+  }
+
+  /* Custom Scroll bar END */
+
+  input {
+    outline: 0 none;
+  }
+
+  *::placeholder {
+    @apply text-inactiveColor
+  }
+}
+
+@layer components {
+  .colored-hero-text {
+    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fancy-left-hero-btn {
+    background: linear-gradient(180deg, #497CFF 0%, #001664 100%);
+  }
+  .fancy-left-hero-btn:hover {
+    background: linear-gradient(180deg, #001664 0%, #497CFF 100%);
+  }
+
+  .fancy-right-hero-btn {
+    background: linear-gradient(180deg, #D1D3E2 0%, #75629D 100%);;
+  }
+
+  .fancy-right-hero-btn:hover {
+    background: linear-gradient(180deg, #75629D 0%, #D1D3E2 100%);;
+  }
+}
